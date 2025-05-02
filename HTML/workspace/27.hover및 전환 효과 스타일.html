@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red-box{
+            width: 100px; height: 20px;
+            background-color: red;
+            /* transition-property: wjsghksgyrhkfmf tjfwjdgkf tjfwjd */
+            background-color: width transition-property;
+            /* transition-duration: 전환이 완료되는데 걸리는 시간 */
+            transition-duration: 3s, 500ms;
+            /* transition-delay: 5s; */
+        }
+
+        .red-box:hover{
+            background-color: blue;
+            width: 100px; height: 20px;
+        }
+        .liner{transition-timing-function: linear;}
+        .ease{transition-timing-function: ease}
+        .ease-in{transition-timing-function : ease-in}
+        .ease-out{transition-timing-function : ease-out}
+        .ease-in-out{transition-timing-function : ease-in-out}
+        .transition{
+            width: 200px;
+            background-color: blue;
+            /*  transition : property duration timing-function delay */
+            transition :width 10s linear 1s;
+        }
+        .transition:hover{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="red-box linear"></div>
+    <div class="red-box ease"></div>
+    <div class="red-box ease-in"></div>
+    <div class="red-box ease-out"></div>
+    <div class="red-box ease-in-out"></div>
+    <div class="transition">dd</div>
+
+</body>
+</html>

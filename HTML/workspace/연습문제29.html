@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let num1 =0;
+        let sum1=0;
+        for(let num1=0;num1<=100;num1++){
+            if(num1%5==0){
+                sum1+=num1
+            }
+            num1++;
+        }
+        console.log(`${sum1}`);
+
+
+        let o=5;
+        for(let dan=1;dan<=9;dan++){
+            console.log(`${o}*${dan}=${o*dan}`);
+        }
+
+        for(i=2;i<=9;i++){
+            for(let k=1;k<=9;k++){
+                console.log(`${i}*${k}=${i*k}`)
+            }
+        }
+
+        for(let b=1;b<=5;b++){
+            let sum10 ='';
+            for(let j=1;j<=b;j++){
+            sum10+='*';
+
+        }
+        console.log(sum10);
+        }
+
+        for(let b1=5;b1>=1;b1--){
+            let sum11 ='';
+        for(let j1=0;j1<=b1;j1++){
+            sum11+='*';
+        }
+        console.log(sum11);
+        }
+
+        
+
+        let array=[70,60,55,75,95,90,80,80,85,100];
+        let sum15=0
+
+        for(let index in array){
+            sum15+=array[index];
+        }
+        console.log(sum15/array.length);
+
+        for(let y=1900;y<=2025;y++){
+            if(y%400 == 0 || y%0==0){console.log(y);}
+            else if(y%100==0){continue;}
+           else if(y%4==0){console.log(y)}
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{background-color: #333333;
+        color: white;
+        text-align: center;
+        margin :0px;
+      
+        }
+
+        div{
+            background-color: grey;
+            width: 100%;
+            height: 1000px;
+            
+            
+            
+        }
+
+        form{
+            background-color: white;
+            
+            margin: 40px;
+            width: 800px;
+            height: 150px;
+            padding: 40px;
+            border-radius: 5px;
+        
+
+
+
+        }
+        
+
+        .absolute{
+            position : absolute;
+            /* left, right만 사용시 : 현재위치에서 left,right로 좌표 이동 */
+            /* 원래 위치에 없는 것으로 처리되어 아래의 태그가 위로올라옴. */
+            right: 450px;
+            /* top이나 bottom을 사용하면 웹브라우저의 0,0위치기준으로 좌표 이동 */
+            
+        }
+
+        input{
+            border: none;
+            box-shadow : 5px 5px 5px 5px rgb(209, 199, 199);
+        }
+        .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.b{
+    background-color: #333333;
+    color: white;
+
+}
+
+    </style>
+</head>
+<body >
+    <h1>로그인</h1>
+    <div class="wrapper">
+    <form action="#" method="GET"  >
+         <lable for ="id">아이디<br></lable> 
+        <input type="text" name="id" size="100px">
+<br>
+         <lable for ="pw">비밀번호<br></lable> 
+        <input type="password" name="pw" size="100px">
+       <br><br> 
+        <input type="submit" value="로그인" class="b">
+    </form>
+
+    </div>
+</body>
+</html>

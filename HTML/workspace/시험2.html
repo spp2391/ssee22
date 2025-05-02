@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+body{
+    width: 1000px ;
+   
+    margin-left: 100px;
+    
+}
+img{
+    display: block;
+}
+.d{
+    width: 1000px;
+    display: inline-block;
+    background-color: #78909C;
+}
+ul li {list-style-type: none;
+    float: right;
+    margin: 5px;
+}
+
+    .foot{
+        text-align: center;
+    }
+.c:hover{
+            color: white;
+            
+        }
+
+.grid-layout{
+            display: grid;
+
+            grid-template-columns: repeat(3) ;
+        grid-template-rows: repeat(3,170px);
+
+        }
+        .grid-layout .grid-item:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1/3;
+        background-color: #90A4AE;
+        padding: 2px;
+      }
+      .grid-layout .grid-item:nth-child(2){
+        grid-column: 2/3;
+        grid-row: 1/3 ;
+        background-color: #87C1DD;
+        padding: 2px;
+      }
+      .grid-layout .grid-item:nth-child(3){
+        grid-column: 3/4;
+        grid-row: 1/2 ;
+        background-color: #729EB4;
+        padding: 2px;
+      }
+      .grid-layout .grid-item:nth-child(4){
+        grid-column: 3/4;
+        grid-row: 2/3 ;
+        background-color: #55688C;
+        padding: 2px;
+      }
+
+      .grid-layout .grid-item:nth-child(5){
+        grid-column: 1/4;
+        grid-row: 3/4 ;
+        background-color: #ADD3DA;
+        padding: 2px;
+      }
+    </style>
+</head>
+<body>
+    <div class="d">
+        <h1>Headr Area</h1>
+        <ul>
+            <li class="c">HTML</li>
+            <li class="c">CSS</li>
+            <li class="c">JavaScript</li>
+            <li class="c">JQuery</li>
+        </ul>
+    </div>
+    <img src="./images/1000x300.svg"    >
+    <div class="grid-layout">
+    <div class="grid-item"><h2>Section A</h2><br>녹차는 은은한 향을 좋아하는 사람들이 애용하는 차이다.녹차를 마실 줄 모르는 사람들은 티백들을 모두  뜯어 주전자에 넣고 끊이기도 하는데 강한차의 향기도 견디기 힘들겠지만 보관도 힘들고 그때그때 방금 끓인 듯한 맛을 느끼지 못하게 되며 진한 카페인덕에 밤에 잠들기도 힘들 것이다.</div>
+    <div class="grid-item"><h2>Section B</h2><br>커피는 독한 향을 좋아하는 사람도 매우 좋아하며 심한 경우 태어나기 전부터 커피를 마신 듯 강한 중독 증세를 보이는 경우가 많다.심지어 원두를 씹어서 향에 자신을 담그는 사람도 있고 설탕 시럽등 다른 조미를 절대로 허락하지 않는 오직 커피맛만을 고집하는 마니아들이 늘고있다.</div>
+    <div class="grid-item"><h2>Article A</h2><br>너무 화려하지 않으며 고귀한 느낌을 가지고 있다. 붉은 색이 단연 으뜸이며 한송이만 있어도 빼어나다.</div>
+    <div class="grid-item"><h2>Article B</h2><br>드물게 푸른 색을 띠고 있으며 작지만 시원해 보이는 어린 꽃이라고 할 수 있다. 여럿이 함께 있을때 더욱 아름답다.</div>
+    <div class="grid-item" ><h2>Footer Area</h2><br><p class="foot">[부산IT교육센터]부산광역시 부산진구 중앙대로 708 부산파이낸스센터 4F,5F 부산it교육센터 T_051.753.5600<br>COPYRIGHTCBUSAN HUMAN RESOURCES DEVELOPMENT INSTITUTE.ALL rights reserverd.</p></div>
+    </div>
+
+</body>
+</html>

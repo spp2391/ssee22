@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제 2</title>
+    <style>
+        /*태그이름 */
+        table, th, td{
+            /* 외각선 : 굵기, 실선 , 색상 */
+            border : 1px solid #ccc;
+            /*외각선이 겹칠 경우 하나로 합치는 설정*/
+            /* border-collapse: collapse; */
+        }
+        th, td{
+            /* 안쪽 여백 : 상하 좌우 */
+            padding:10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>수습 국원 지원 양식</h1>
+    <table>
+        <caption></caption>
+        <colgroup>
+            <col>
+            <col>
+            <col style="width: 180px;">
+        
+        </colgroup>
+            <tr>
+                <th rowspan="3">개인정보</th>
+                <th>이름</th>
+                <th></th>
+            </tr>
+
+            <tr>
+                <th>학과/학번</th>
+                <th></th>
+            </tr>
+
+            <tr>
+                <th>연락처</th>
+                <th></th>
+            </tr>
+
+            <tr>
+                <th>지원 분야</th>
+                <th colspan="2"></th>
+            </tr>
+    </table>
+</body>
+</html>

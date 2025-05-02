@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @keyframes bgchange{
+            0%{background-color: red; transform: translate(0px,0px);}
+            50%{background-color: rgb(137, 137, 218) ; transform:translate(10px,10px)  ;}
+            100%{background-color: green ; transform :translate(0px,0px);}
+        }
+        div{
+        
+        width: 100px; height: 100px ;
+        animation-name: bgchange;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-direction: alternate ;
+        
+        transform: translate(100px,200px);
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div >Animation</div>
+</body>
+</html>

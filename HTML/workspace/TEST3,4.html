@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="TEST3,4.css">
+    <!-- <script src="TEST3,4.js"></script> -->
+</head>
+
+<body>
+    <div id="wrapAll">
+
+        <div class="title2">문제9)</div>
+        <div id="testB">
+            <div class="bigImg">
+                <img src="images/img_b.jpg" alt="1">
+                <img src="images/img_n.jpg" alt="2">
+                <img src="images/img_navy.jpg" alt="3">
+                <img src="images/img_r.jpg" alt="4">
+            </div>
+            <div class="sImg">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="title4">문제10)</div>
+        <div id="testD">
+            <div id="tabContainer">
+                <div class="tabA on">
+                    <p>HTML</p>
+                </div>
+                <div class="tabB">
+                    <p>CSS</p>
+                </div>
+                <div class="tabC">
+                    <p>JavaScript</p>
+                </div>
+                <div class="tabD">
+                    <p>JQuery</p>
+                </div>
+            </div>
+            <ul class="tabBtn">
+                <li class="on">HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>JQuery</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+           const big = document.querySelectorAll(".bigImg img");
+           console.log(big)
+           const small = document.querySelectorAll(".sImg div");
+           console.log(small)
+           for (let i = 0; i < small.length; i++) {
+                small[i].addEventListener("click", function() {
+                    console.log(i)
+                for(let j=0;j<4;j++){
+                    big[j].style.display="none";
+                    small[j].style.border="none"
+                }
+                      
+                        big[i].style.display="block";
+                       small[i].style.border="5px solid red"
+        
+        
+                });
+            }
+            
+
+           
+
+            const tab=document.querySelectorAll("#tabContainer div");
+            const tab1= document.querySelectorAll(".tabBtn li");
+            for(let z=0; z<tab.length;z++){
+                tab,tab1[z].addEventListener("click",function(){
+                    for(let y=0;y<4;y++){
+                        tab[y].classList.remove("on");
+                        tab1[y].classList.remove("on");
+                       
+                    }
+                    tab[z].classList.add("on");
+                    tab1[z].classList.add("on");
+                })
+            }
+           
+    </script>
+</body>
+
+</html>

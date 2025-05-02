@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //if문 문법
+        //단독 사용 가능
+        //else if, else문은 if문 아래에만 사용가능, 단독사용 불가능
+        //조건식중 하나라도 true가나오면 아래 조건식은 실행하지 않음
+        //if(조건식){
+        //조건식이 true 일때 실행되는 코드   
+        //실행코드는 여러줄 작성가능
+    //}
+    let score=65;
+    if(score>=90){
+        console.log("A");
+    }
+    // else if(조건식){
+    //    위의 조건식에 false 나오면 elseif실행
+    // }
+    else if(score>=80){
+        console.log("B");
+    }
+    else if(score>=70){
+        console.log("C");
+    }
+    //else{}
+    // 위의 조건식중 하나도 해당되지않을 경우 실행
+    else{
+        console.log("F");
+    }
+
+    //switch 조건문 : if문과 같은 조건문 연속으로
+    // switch(변수){
+    //     case 변수랑 비교할 값 : 
+    //     실핼 할 코드
+    //     break;
+    
+
+    
+    //     case 2번째변수랑 비교할 값 : 
+    //     실핼 할 코드
+    //     break;
+
+    //     defalult:
+    //     위 조건에 해당되는 게 없을때 실행
+    // }
+    let food="melon";
+    switch(food){
+        case "melon":
+        console.log("과일");
+        break;
+        case "apple":
+        console.log("과일");
+        break;
+        case "gogi":
+        console.log("good");
+        break;
+        default :
+        console.log("끝");
+    }
+    </script>
+</body>
+</html>

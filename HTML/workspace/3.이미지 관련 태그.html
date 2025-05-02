@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 관련 태그</title>
+</head>
+<body>
+    <!-- img태그 : HTML 문서에 이미지를 출력할때 사용하는 태그 -->
+ <!-- src속성 : 파일의 위치를 설정 -->
+<!-- alt속성: 파일이 없을 경우 대신나오는 문구 -->
+ <!-- 절대경로 방식 : 드라이브 부터 시작하여 파일 위치까지 전부 작성하는 방식 -->
+  <!-- 단점 : 이미지 파일의 위치가 변경되거나 다른 컴퓨터로 옮기는 경우 이미지가 뜨지않음. 걍 안씀 -->
+<img src="C:\Users\it\Desktop\workspace\images\link.png" alt="파일 불러오기 오류">
+<img src="./images/mic.jpg" alt="절대경로">
+<!-- 상대경로 : 특정 폴더기준으로 파일을 찾는 방식 -->
+ <!-- ./ : 현재 HTML파일이 있는 폴더를 기준으로 위치를 찾는 방식 -->
+  <!-- ../ : 현재 HTML파일이 있는 폴더의 상위폴더 기준으로 위치를 찾는 방식 -->
+   <img src="../workspace/images/salad.jpg" alt="상위폴더">
+   <!-- / : 서버가 설정한 기본 폴더를 기준으로 위치를 찾는 방식 -->
+   <img src="/images/top.jpg" alt="서버폴더">
+   <!-- 인터넷 주소를 이용한 방식 저작권이슈-->
+    <img src="https://search.pstatic.net/common?type=f&size=206x206&quality=95&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fkeypage%2Fimage%2Fdss%2F605%2F84%2F69%2F19%2F605_11846919_kind_imgurl_1_1579514278263.png" alt="이미지주소">
+    <!-- width(가로),heith(세로) 이미지의 크기를 조정하는 속성 -->
+     <div>
+        <img src="./images/salad.jpg", alt="샐러드" width="150px" height="150px">
+        <!-- 가로나 세로 하나만 설정하는 경우 원본 비율에 맞춰 크기를 조절 해 준다. 비율맞추려면 가로든 세로든 1개만 해라.-->
+     </div>
+     <div style="height: 500px; border: 1px solid black;">
+     <!-- % 이용하여 이미지 크기 설정하기. -->
+      <!-- 가로 설정 시 가로크기는 고정되어 있기 때문에 설정 할수 있음. -->
+       <!-- 세로는 고정되어 있지 않기 때문에 설정 x
+       세로를 설정하려면 부모 태그의 세로크기를 설정해야한다. 
+       -->
+     <img src="./images/salad.jpg", alt="샐러드" width="300px" >
+     </div>
+     
+</body>
+</html>

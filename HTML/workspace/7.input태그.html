@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input 태그</title>
+</head>
+<body>
+    <form action="#">
+        <input type="hidden" name="hidden" value="hiddendata">
+        <input type="text" name="id">
+        <input type="submit" value="전송">
+
+    </form>
+    <!-- enctype=multipart/form-data : 파일 전송하려면 사용해야할 속성-->
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <!-- multiple  여러개의 파일을 보낼 수있음. -->
+        <input type="file" name="file" multiple>
+        <!-- hidden : 화면에는 보이지 않는 데이터만 저장하는 타입으로
+        submit실행시 hidden에있는 데이터도 함께전송 -->
+        <input type="hidden" name="이름" value="서버로 넘긴값">
+        <button>파일 보내기</button>
+
+    </form>
+
+    <form action="#">
+        <input type="time" name="time">
+        <input type="datetime-local" name="datetime-local">
+        <input type="image" src="./images/login.png" alt="로그인">
+        <!-- onclick속성 : javascript 실행하기 위한 속성 -->
+         <!-- window.open('파일 이름') : 새로운창에 파일을 띄워줌. -->
+        <input type="button" value="버튼" onclick="window.open('index.html')">
+        <input type="reset" value="취소">
+        <!-- type : submit, botton, reset : type 설정하지 않으면 기본값 submit  -->
+        <button type="button" onclick="window.open('index.html')">버튼태그</button>
+    </form>
+    <form action="#">
+        <input type="date" name="date">
+        <input type="month" name="month">
+        <input type="week" name="week"> 
+        <input type="submit" value="전송">
+    </form>
+    <form action="#">
+        <input type="number" name="num" min="2" max="10" step="2">
+        <input type="range" name="ran" min="2" max="10" step="2">
+        <input type="submit" value="전송">
+    </form>
+
+    <form action="">
+     <!-- radio 태그 : 여러개의 내용중 한개만 선택해야 하는 경우 사용하는 태그 -->
+     <!-- 똑같은 name속성을 사용하는 것으로 radio태그를 하나로 묶어서 사용 -->
+     <label>선물 포장<input type="radio" name="gift" value="yes"></label>
+     <label>일반포장<input type="radio" name="gift" value="no"></label>
+     <input type="submit" value="전송">
+    </form>
+
+   <form action="#">
+    <!-- x버튼이 생겨서 내용을 초기화 할 수있음. -->
+    <input type="search" name="search">
+    <input type="url" name="url">
+    <!-- url형식 아닌격우 에러 문구출력 -->
+    <input type="email" name="email">
+    <!-- 이메일 형식 아닐 경우 에러문구 출력 -->
+    <input type="tel" name="tel">   
+    <!-- 제한x -->
+    <input type="submit" value="전송">
+   </form> 
+
+   <form action="">
+    <!-- 체크박스의 경우 label태그를 눌러 체크가 가능. -->
+     <!-- value속성 : 직접 체크가 되었을 때 value값을 전송함 -->
+    <label>선물용3kg<input type="checkbox" name="check1" value="55"></label>
+    <label>선물용5kg<input type="checkbox" name="check2" value="A5"></label>
+    <label>가정용3kg<input type="checkbox" name="check3" value="B3"></label>
+    <label>가정용5kg<input type="checkbox" name="check4" value="C5"></label>
+    <input type="submit" value="전송">
+   </form>
+</body>
+</html>

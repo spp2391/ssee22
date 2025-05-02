@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 표준내장 객체 : 이미 만들어져 있는 객체
+        //String : 문자열 관련 객체
+        let str = "안녕하세요.";
+        console.log(str.length);
+        console.log(str.includes("세"));
+        let phone = "010.1234.5678";
+        console.log(`${phone} : ${phone.replaceAll('.','/')}`)
+    
+        //Date : 날짜관련 객체
+        //날짜 객체 선언하기
+        let now=new Date();
+        console.log(now); //오늘 날짜 설정하기
+        let date = new Date(2025,1,1,10,11,20);
+        console.log(date);
+        //특정 날짜 설정하기 new Date(연,월,일,시,분,초)
+        //자바스크립트는 월 설정시 0~11을 1~12월로 설정
+        console.log(now.toLocaleDateString());
+        //toLcaleString() : 한국에서 사용하는 날짜 및 시간출력
+        //toLOCALEDATEString():한국에서 사용하는 날짜 출력
+
+        let arr = [3,1,65,10,76,100,54];
+        console.log(`${arr}배열에 저장된 데이터 수 ${arr.length}`);
+        //메서드 :객체 안에있는 함수
+        arr.sort(function(a,b){
+            return a-b;//오름차순정렬
+            return b-a;//내림차순
+        }); //파괴적 메서드 : 함수가 실행되면 원본데이터를 변경하는 함수
+        console.log(`${arr}의 순서를 오름차순으로 변경${arr}`);
+        arr.reverse();//배열안의 값을 반대로 정렬하는 메서드
+        //Array : 배열관련 객체
+        //Math : 숫자관련 객체
+        //반올림
+        let number = 3.987;
+        console.log(`반올림:${Math.round(number)}`);
+        console.log(`버림:${Math.floor(number)}`);
+        //랜덤값
+        console.log(`0~1사이의 소수점값을 출력함 ${Math.random()}`);
+        //버림
+        //0~20까지의 랜덤값 출력하기
+        let randomValue=Math.floor(Math.random()*5)+1;
+        console.log(randomValue);
+        //0.5*5=2.5 =2 +1=3
+        //0.8*5=4.0=4+1=5
+        //0.2*5=1.0=1+1=2
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#a">안녕하세요로이동</a>
+    <div id="a">안녕하세요</div>
+    <button onclick="popup()">팝업</button>
+    <button onclick="printInfo()">window 객체 속성</button>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <button onclick="scroll()">스크롤 이동!</button>
+    <script>
+        function printInfo(){
+            console.log(`웹브라우저의너비: ${window.innerWidth}`);
+            console.log(`웹브라우저의높이 ${window.innerHeight}`);
+            console.log(`웹브라우저 창의너비 ${window.outerWidth}`);
+            console.log(`웹브라우저 창의높이 ${window.outerHeight}`);
+            console.log(`웹브라우저 창 위쪽면과 모니터 사이의 간격 ${window.screenTop}/${window.screenY}`);
+            // console.log(`웹브라우저 창 왼쪽면과 모니터 사이의 간격${window.screenLeft}/${}`);
+            // console.log(`웹브라우저 창의 스크롤 가로위치:${window.scrollX}`);
+            console.log(`웹브라우저창의 스크롤 세로위치${window.scrollY}`);
+        }
+
+        function popup(){
+            window.open('popup.html','팝업','width=200','heght=100');
+        }
+
+        function scroll(){
+            window.scroolTo(100,200);
+            window.scrollBy(100,200);
+        }
+    </script>
+</body>
+</html>

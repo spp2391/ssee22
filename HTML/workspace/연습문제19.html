@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;}
+        .header {background-color: red;}
+        /* 하위 선택자(공백선택자): 선택자 안에 존재하는 태그를 선택하는 선택자 */
+        .header h1,ul,li{display: inline-block;}
+        
+        .w{
+            background-color: #DC143C;
+            position: fixed;
+            top:0px;
+        }
+        .f{
+            background-color: #90EE90 ;
+            
+        }
+
+        .s{
+            background-color: #CCFFCC;
+        }
+
+        .t{
+            background-color: #228B22;
+            position: absolute;
+            left: 300px;
+            top: 50px;
+        }
+
+        .boxw{
+            width: 100%; height: 50px;
+        }
+        .box{
+            width: 300px; height: 200px;
+        }
+
+        .box1{
+            width: 300px; height: 400px;
+        }
+
+        .box2{
+            width: 100%; height: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>logotype</h1>
+    </div>
+    
+        <div class="f box">
+            <ul>
+                <li><a href="#">m1</a></li>
+                <li><a href="#">m2</a></li>
+                <li><a href="#">m3</a></li>
+                <li><a href="#">m4</a></li>
+            </ul>
+        </div>
+
+        <div class="s box1">
+            <ul>
+                <li>s1</li>
+                <li>s1</li>
+                <li>s1</li>
+                <li>s1</li>
+            </ul>
+        </div>
+
+        <div class="t box2">
+            <p>내용
+            <br>
+            헤더를 상단에고정
+            <br>
+            헤더를 상단에고정
+            <br>
+            헤더를 상단에고정
+            <br>
+            헤더를 상단에고정
+            <br>
+            헤더를 상단에고정
+            <br>
+            헤더를 상단에고정
+            
+            </p>
+        </div>
+    
+</body>
+</html>

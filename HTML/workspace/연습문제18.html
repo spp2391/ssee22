@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('./images/bg_grid.gif');
+        
+        }
+        .box{
+            width: 250px; height: 100px; padding: 10px;
+        }
+        .wrap{background-color: rgba(128, 128, 128, 0.527);
+        width :700px; height: 200px;
+        margin: 20px;
+        }
+        *{
+            margin: 20; padding: 10; box-sizing: border-box;
+        }
+    
+    .red-box{background-color: red;
+    position: relative;
+    z-index: 1;
+    }
+    .green-box{background-color: green;
+    position: relative;
+    top: -50px;
+    left: 70px;
+    z-index: 3;
+    }
+    .blue-box{background-color: blue;
+        position: relative; 
+        left: 100px;
+        top: -60px;
+        z-index: 2;
+    }
+</style>
+</head>
+<body>
+   <div class="wrap">
+    <div class="box red-box">뻘건색</div>
+    <div class="box green-box">초록초록</div>
+    <div class="box blue-box">퍼렁이</div>
+   </div>
+</body>
+</html>

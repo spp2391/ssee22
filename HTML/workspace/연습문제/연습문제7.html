@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배송</title>
+    <style>
+    #container {
+        width:800px;
+        margin:0 auto;
+        border : 1px solid black;
+        padding: 300px 40px;
+        }
+        th{
+            color: rbg(23,158,211);
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+    <form action="#" method="get">
+        <h2>배송주소</h2>
+        <hr>
+        <table>
+            <tr>
+            <th rowspan="3">배송방법</th>
+            <td><label><input type="radio" name="pick up">일반택배</label></td>
+            <td><label><input type="radio" name="pick up">해외배송</label></td>
+            <td><label><input type="radio" name="pick up">안심택배</label></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label><input type="radio">편의점 픽업</label></td>
+            <td><label><input type="radio">중고매장 픽업</label></td>
+       </tr>
+       <tr>
+            <td></td>
+            <td colspan="3">!편의점픽업, 해외배송, 업체배송의 경우 총알하루 배송이 적용되지 않습니다.</td>
+        </tr>
+        </table>
+
+        <hr>
+        <table>
+            <tr>
+            <th>배송지</th>
+            <td><label><input type="radio">최근 배송지</label>
+            <button type="button">더보기</button>
+            </td>
+            <td><label><input type="radio">주소록</label></td>
+            <td><label><input type="radio">회원정보동일</label></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><label><input type="radio">새로입력</label></td>
+            </tr>
+        </table>
+        
+       
+        <hr>
+        배송지
+        <label><input type="radio">최근 배송지</label>
+        <input type="button" value="더보기">
+        <label><input type="radio">주소록</label>
+        <label><input type="radio">회원정보동일</label>
+        <label><input type="radio">새로입력</label>
+        </div>
+        <br>
+        <label for="name">이름</label>
+        <input type="text" id="name">
+        <label for="adress">배송주소
+        <input type="text" id="adress">
+        <input type="button" value="주소찾기"></label>
+            <div>
+        <label for="doro">도로명주소
+        <input type="text" id="doro">
+
+        <label for="ji">지번주소
+        <input type="text" id="ji">
+        <input type="button" value="주소록에 추가"></label>
+        <p>주소/우편번호체계가 새롭게 변경되었습니다.
+        <br>
+        정확하고 빠른 배송을 위해 입력된 주소를 확인하시고 업데이트해 주시기 바랍니다.
+        </p>
+    </div>
+        <ul>
+            <li><label for="phone">핸드폰</label>
+                <select>
+                    <option value="0">010</option>
+                    <option value="1">051</option>
+                </select>   
+                -
+                <input type="text">
+                -
+                <input type="text">
+            !연락처는 하나만 입력하셔도 결제가 가능합니다.
+            </li>
+            <li><label for="phone">일반전화</label>
+                <select>
+                    <option value="0">010</option>
+                    <option value="1">051</option>
+                </select>   
+                -
+                <input type="text">
+                -
+                <input type="text">
+            </li>
+            </ul>
+    </div>
+        <hr>
+        <h2>주문고객</h2>
+        <hr>
+        <div>
+        <ul>
+        <li><label for="name">이름</label>
+        <input type="text" id="name"></li>
+        <li><label for="phone">핸드폰</label>
+            <select>
+                <option value="0">010</option>
+                <option value="1">051</option>
+            </select>   
+            -
+            <input type="text">
+            -
+            <input type="text">
+        !연락처는 하나만 입력하셔도 결제가 가능합니다.
+        </li>
+        <li><label for="phone">일반전화</label>
+            <select>
+                <option value="0">010</option>
+                <option value="1">051</option>
+            </select>   
+            -
+            <input type="text" maxlength="4">
+            -
+            <input type="text" maxlength="4">
+        
+        </li>
+        <li><label for="email">이메일</label>
+            <input type="email" id="email"></li>
+        <li><input type="submit" value="제출"></li>
+        </ul>
+        </div>
+        
+        
+    </form>
+</body>
+</html>

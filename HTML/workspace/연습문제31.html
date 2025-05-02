@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            display: flex;
+            margin :0 auto;
+            text-align: center;
+            width: 50% ; margin: 0 auto ; 
+        }
+        .centerArea{
+            display : flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrap">
+        <div class="imgArea">
+            <img src="./images/가위.png" alt="user">
+            <p>가위</p>
+        </div>
+        <div class="centerArea">
+            <h3>이겼습니다</h3>
+            <p>VS</p>
+            <div>
+                <button onclick="gawi()">✌</button>
+                <button>👊</button>
+                <button>🖐</button>
+            </div>
+        </div>
+        <div class="imgArea">
+            <img src="./images/바위.png" alt="computer">
+            <p>바위</p>
+        </div>
+    </div>
+    <script>
+        function gawi(){
+            
+        }
+        // 버튼을 눌렀을때 왼쪽의 이미지가 버튼에 맞게 변하도록
+        // 컴퓨터가 랜덤으로 가위,바위,보 중에 하나를 설정하도록 
+        // 0~2까지의 랜덤값 저장 (0:가위, 1:바위, 2:보)
+        const computer = Math.floor(Math.random()*3);
+        // 사람과 컴퓨터의 값을 비교하여 승패를 설정하도록
+    </script>
+</script>
+</body>
+</html>

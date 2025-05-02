@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* margin :바깥여백, 태그들 끼리 적당한 거리를 가질 수 있도록 하는 설정 */
+        div{
+            border: 2px solid black;
+            /* 모든 방향이 10px */
+            margin: 10px;
+            /* 상하=10px 좌우=20px */
+            margin: 10px 20px; 
+            /* 상=10px 좌우=20px 하=30px */
+             margin: 10px 20px 30px; 
+             /* 상=10 우=20 하=30 좌=40*/ 
+             margin: 10px 20px 30px 40px; 
+             /* margin 각각 설정법*/
+             margin-top: 10px;
+             margin-right: 10px;
+             margin-bottom: 10px;
+             margin-left: 10px;
+
+             /* margin 겹침현상 */
+             /* margin위와 아래는 다른 margin영역과 겹쳐질 경우 
+             값이 큰 쪽이 적용되고 작은 쪽은 적용되지 않음 */
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    </body>
+</html>

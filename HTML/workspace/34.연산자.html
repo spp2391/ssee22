@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //산술 연산자 : +,-,*,/,%,**,++,--
+        let num= 5%2;
+        console.log(num);
+        // % :5/2의 나머지 값을 출력하는 연산자
+        //** :거듭제곱 구하는 연산자
+
+        let num2=3**2;
+        console.log("3**2=",num2);
+        //++ : 1을 더해주는 연산자
+        //-- : 1을 빼주는 연산자
+        let num3 =10;
+        num3++;
+        console.log(num3);
+
+        num3--;
+        console.log(num3);
+
+        //대입연산자 : 변수에 저장하는 연산자
+        let value=1;//value에 1을 대입(저장)
+        vlaue1 +=3;//value1= value1 +3
+        value1 -=1;//value1= value1 -1
+        value1 *=2;//value1= value1 -1
+        value1 /=1;//value1= value1 -1
+        value1 %=1;//value1= value1 -1
+        value1 **=1;//value1= value1 -1
+
+        //비교연산자
+        //== x와 y같으면 true 아니면 false
+        // === :값과 자료형이 모두 같으면 true,아니면 fale 자바스크립트는 ===사용
+        console.log(3==1)
+        console.log(3==3)
+        console.log(3==='3')// false 숫자 자료형과 문자자료형의 차이로 false
+        //!= ,!== : x와 y같으면 false 다르면 true
+        console.log(1!=2)
+        console.log(2!==3)
+        // x>y : x는 y보다 크다 
+        //x<y :x는 y보다 작다
+
+        // && : and 연산자
+        console.log(true &&true)// true
+        console.log(true &&false)// true
+        console.log(false &&true)// true
+        console.log(false &&false)// true
+
+        //or연산자 : || true가 하나라도있으면 true
+        console.log(true ||true)// true
+        console.log(true ||false)// true
+        console.log(false ||true)// true
+        console.log(false ||false)// true
+
+        //3항 연산자 : 조건식이1개일때만 사용
+        //조건 ? true의 결과 : false 결과 
+        let score=90;
+        let grade =score >=90 ? 'A+' :'B';
+        console.log(grade)//A+
+    </script>
+</body>
+</html>
